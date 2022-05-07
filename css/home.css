@@ -1,0 +1,59 @@
+#detail{
+    padding-left: 30vw;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+*{
+    background-color: black;
+    color: whitesmoke;
+}
+button{
+    background-color:whitesmoke;
+    color: black;
+    width:5vw;
+}
+#search{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+p{
+    font-size:2vw;
+    color: white;
+    visibility: hidden;
+}
+h2{
+    color: white;
+}
+#user_info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media all and (max-width:1000px){
+    #search{
+        flex-direction: column;
+    }
+}
+#friends{
+    display:flex;
+    flex-direction: column;
+    gap: 5 rem;
+    align-items: center;
+    justify-content: center;
+}
+#friends div{
+    justify-content: center;
+    align-items: center;
+}
+#plot{
+ width: 100vw;
+}
+#myChart{
+    width:100vw;
+    height:50vh;
+    border-color: white;
+    background-color: white;
+    visibility: hidden;
+}

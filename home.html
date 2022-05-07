@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
-    <script src="https://code.angularjs.org/1.2.21/angular.js"></script>
-
-    <script src="https://code.highcharts.com/highcharts.src.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./home.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/home.css"/>
+    <script src="./js/home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
   <body>
-    <div class="container">
-      <input
-        type="text"
-        id="box"
-        placeholder="Search anything..."
-        class="search__box"
-      />
-      <i
-        class="fas fa-search search__icon"
-        id="icon"
-        onclick="toggleShow()"
-      ></i>
+    <div>
+      <center><img src="assets/cf.jpg" style="width:25vw;height:5vw;"></center>
     </div>
-    <div class="container2">
-      <div id="dp"></div>
-      <p id="place"></p>
-      <p id="name"></p>
+    <div id="detail">
+      <p><u>Enter the username</u></p>
+      <div id="search">
+      <input type="text" id="handle" placeholder="Frey0_0"><br><br>
+      <button onclick="info();">Search</button>
+      <button onclick="friends()">Show your friends</button>
+      <button onclick="blogs()">Blogs</button>
+      </div>
+    </div>
+    <div id="user_info">
+      <p id="image"></p>
       <p id="handle"></p>
-      <p id="rank"></p>
+      <p id="name"></p>
       <p id="rating"></p>
-      <div id="ratingchart" style="height: 400px; width: 500px"></div>
-      <table id="contest"></table>
-      <p id="blog"></p>
-      <p id="comment"></p>
-      <table id="onlinefriends" class="data"></table>
+      <p id="max_rating"></p>
+      <p id="rank"></p>
+      <p id="location"></p>
+      <p id="friendsof"></p>
+    </div>
+   <center> <canvas id="myChart" style="width:100%;max-width:600px"></canvas></center>
+    <div id="contest">
+      <p id="c1"></p>
+      <p id="c2"></p>
+      <p id="c3"></p>
+      <p id="c4"></p>
+      <p id="c5"></p>
+    </div>
+    <div id="friends">
+      <div ><p id="online"></p></div>
+      <div> <p id="all"></p></div>
+    </div>
+    <div id="blogs">
+      <h1 id="h1"></h1>
+      <p id="b1"></p>
+      <h1 id="h2"></h1>
+      <p id="b2"></p>
+      <h1 id="h3"></h1>
+      <p id="b3"></p>
     </div>
   </body>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="./home.js"></script>
 </html>
