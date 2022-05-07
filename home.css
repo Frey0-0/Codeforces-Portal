@@ -1,0 +1,103 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  line-height: 2;
+}
+
+.container {
+  width: 350px;
+  height: auto;
+  background-color: #1e272e;
+
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4rem;
+  padding: 10px;
+}
+
+.search__box {
+  float: left;
+  width: 0;
+  height: 4rem;
+
+  background: none;
+  color: #f7f7f7;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  position: relative;
+  opacity: 1;
+  transition: all 0.75s ease-in;
+  cursor: pointer;
+}
+
+.search__icon {
+  box-sizing: border-box;
+  font-size: 2.5rem;
+  display: inline-block;
+
+  margin-left: 0.8rem;
+  margin-top: 0;
+  cursor: pointer;
+  position: absolute;
+  color: #fa983a;
+  transition: all 0.25s ease-in;
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+
+.container:hover > .search__box {
+  width: 85%;
+  padding: 0 1rem;
+}
+
+.container:hover > .search__icon {
+  background-color: #eee;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20rem;
+  text-align: center;
+  font-size: 2rem;
+}
+#ratingchart {
+  position: relative;
+  left: 35vw;
+}
+#contest {
+  text-align: left;
+}
+#blog {
+  text-align: left;
+  margin-top: 1rem;
+}
+#comment {
+  text-align: left;
+}
+#onlinefriends,
+#offlinefriends {
+  text-align: left;
+}
+.data tr td {
+  cursor: pointer;
+}
